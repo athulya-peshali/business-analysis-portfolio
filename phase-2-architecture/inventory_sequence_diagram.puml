@@ -1,0 +1,25 @@
+@startuml
+autonumber
+actor Customer
+participant "Storefront UI" as UI
+participant "API Gateway" as Gateway
+participant "Inventory Service" as Service
+database "Inventory DB" as DB
+
+Customer -> UI: Place Order (ItemID, Qty)
+UI -> Gateway: POST /api/v1/orders
+Gateway -> Service: ReserveInventory(ItemID, Qty)
+Service -> DB: SELECT stock_count WHERE item_id = ItemID FOR UPDATE
+alt Stock Available
+    DB --> Service: stock_count >= Qty
+    Service -> DB: UPDATE stock_count = stock_count - Qty
+    Service --> Gateway: 200 OK (Reservation Confirmed)
+    Gateway --> UI: Order Placed Successfully
+    UI --> Customer: Display Order Confirmation
+else Out of Stock
+    DB --> Service: stock_count < Qty
+    Service --> Gateway: 409 Conflict (Insufficient Stock)
+    Gateway --> UI: Order Failed (Stock Out)
+    UI --> Customer: Prompt Backorder / Refund Option
+end
+@enduml
