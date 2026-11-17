@@ -1,43 +1,44 @@
-# 🚀 Enterprise Real-Time Inventory & Order Sync Initiative
+# 💼 End-to-End Business Analysis & Systems Architecture Portfolio
 
-![Domain](https://img.shields.io/badge/Domain-E--Commerce%20%26%20Supply%20Chain-blue)
-![Role](https://img.shields.io/badge/Role-Business%20Analyst-green)
-![Status](https://img.shields.io/badge/Status-Initiation%20%26%20Strategy-orange)
+![Domain](https://img.shields.io/badge/Domain-Supply%20Chain%20%26%20E--Commerce-blue)
+![Role](https://img.shields.io/badge/Role-Business%20Analyst%20%7C%20Data%20Analyst-green)
+![Methodologies](https://img.shields.io/badge/Methodologies-BPMN%202.0%20%7C%20UML%20%7C%20Agile%20%7C%20SQL-purple)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ## 📌 Executive Summary
-This repository contains the initiation artifacts, root cause analysis, and Business Requirements Document (BRD) for transforming a fragmented, batch-processed retail fulfillment pipeline into a real-time event-driven inventory synchronization architecture.
+This master repository houses the complete lifecycle delivery artifacts for an **Enterprise Real-Time Inventory & Order Synchronization System**. It demonstrates end-to-end execution across 6 core phases of Business Analysis: problem initiation, process modeling, requirements specification, data analytics, agile delivery governance, and system deployment.
 
 ---
 
-## 🎯 Business Problem & Objectives
+## 🗺️ Master Portfolio Index
 
-### 5 Whys Root Cause Summary
-* **Symptom:** High customer order cancellation rate (14%) and delayed fulfillment (48h average).
-* **Root Cause:** Legacy inventory databases operate on a 24-hour batch sync (runs at midnight) with zero real-time API connectivity to the digital storefront.
-
-### Quantified Problem Statement
-> "Due to fragmented legacy inventory databases and 24-hour batch processing, Warehouse Operations and Customer Support teams experience unrealized inventory discrepancies, resulting in a 48-hour order fulfillment delay, a 14% cancellation rate, and $180,000 in lost quarterly revenue. Implementing an event-driven inventory synchronization service will reduce processing times below 2 hours and maintain cancellation rates under 1.5%."
-
----
-
-## 📁 Repository Artifacts
-
-| Deliverable | File Link | Description |
-| :--- | :--- | :--- |
-| **Business Requirements Document** | [`BRD.md`](./BRD.md) | Complete business requirements, KPIs, and governance rules |
-| **RACI Governance Matrix** | [`RACI_Matrix.csv`](./RACI_Matrix.csv) | Decision authority and role alignment matrix |
-| **Executive PDF Summary** | [`docs/BRD_Inventory_Sync_v1.0.pdf`](./docs/) | Print-ready stakeholder review document |
+| Phase Folder | Focus Area | Core Artifacts & Tools | Status |
+| :--- | :--- | :--- | :---: |
+| [`/phase-1-initiation`](./phase-1-initiation/) | **Business Strategy & Framing** | 5 Whys RCA, Problem Statement, BRD, RACI Matrix, Scope Boundaries | **Completed** |
+| [`/phase-2-architecture`](./phase-2-architecture/) | **Process & Systems Modeling** | BPMN 2.0 (As-Is / To-Be), UML Use Case, API Sequence Diagram | **Completed** |
+| [`/phase-3-requirements`](./phase-3-requirements/) | **Requirements Engineering** | IEEE 830 SRS, INVEST User Stories, Gherkin BDD, RTM Matrix | *In Progress* |
+| [`/phase-4-analytics`](./phase-4-analytics/) | **Data Analytics & BI** | Relational SQL Schemas, CTEs, Window Functions, Power BI Dashboards | *Upcoming* |
+| [`/phase-5-governance`](./phase-5-governance/) | **Agile PM & Quality Assurance** | Work Breakdown Structure (WBS), UAT Test Suites, Change Control (CR) | *Upcoming* |
+| [`/docs`](./docs/) | **Executive Documentation** | Master PDF Handbooks & Printable Stakeholder Summaries | **Active** |
 
 ---
 
-## 🛠️ Tools & Frameworks Applied
-* **Analysis & Framing:** 5 Whys Root Cause Analysis, SMART KPI Definition
-* **Governance & Strategy:** RACI Governance Framework, Scope Boundary Matrix
-* **Documentation Standards:** Markdown specifications, IEEE-inspired business requirement structures
+## 🎯 Case Study Overview: Real-Time Inventory & Order Sync
+
+* **Business Problem:** High customer cancellation rate (14%) and 48-hour fulfillment delays driven by a 24-hour midnight batch inventory sync.
+* **Target Outcome:** Implement real-time transactional stock locking and digital picking queues to drop order cycle times below 2 hours and cancellations under 1.5%.
+* **Architectural Stack:** Storefront UI $\rightarrow$ REST API Gateway $\rightarrow$ Inventory Microservice $\rightarrow$ PostgreSQL DB.
 
 ---
 
-## 👤 Author & Portfolio Context
-* **Repository Owner:** [Athulya Peshali](https://github.com/athulya-peshali)
-* **Portfolio Focus:** Business Analysis | Requirements Engineering | Data Analytics
+## 🛠️ Tooling & Standards
+* **Process Modeling:** BPMN 2.0, PlantUML, Draw.io
+* **Requirements & Governance:** IEEE 830, Gherkin BDD, RACI Matrix, INVEST Criteria
+* **Data & Analytics:** PostgreSQL SQL, CTEs, Power BI (.pbix)
+* **Version Control:** Git, GitHub Markdown Architecture
+
+---
+
+## 👤 Author
+* **Portfolio Owner:** [Athulya Peshali](https://github.com/athulya-peshali)
+* **Role Focus:** Business Analyst | Project Manager | Data Analyst
