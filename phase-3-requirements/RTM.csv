@@ -1,0 +1,6 @@
+Req_ID,Business_Goal_ID,Description,System_Module,Test_Case_ID,Status
+FR-001,BG-01,Real-time stock reservation at checkout,Inventory Microservice,TC-INV-01,Approved
+FR-002,BG-02,Digital pick-list generation for warehouse staff,Warehouse Mobile UI,TC-WHS-01,Approved
+FR-003,BG-03,Automated low-stock procurement alerting,Alerting Engine,TC-ALT-01,Approved
+NFR-001,BG-01,Sub-200ms API response latency,API Gateway,TC-PERF-01,Approved
+NFR-002,BG-04,OAuth2/JWT endpoint security,Auth Gateway,TC-SEC-01,Approved
