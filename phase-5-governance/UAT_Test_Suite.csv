@@ -1,0 +1,5 @@
+Test_Case_ID,Module,Test_Scenario,Preconditions,Expected_Result,Status
+UAT-INV-001,Inventory Lock,Customer checkout reserves stock instantly,SKU-9021 available count is 5,Stock balance updates to 3 within 500ms and returns 200 OK,Pass
+UAT-INV-002,Inventory Lock,Prevent checkout when item is out of stock,SKU-4088 available count is 0,System blocks payment and displays Out of Stock error message,Pass
+UAT-WHS-001,Warehouse Pick-List,Auto-generate digital pick list upon order confirmation,Order status is FULFILLED,Pick-list pushes automatically to handheld scanner UI,Pass
+UAT-ALT-001,Procurement Alert,Trigger low-stock webhook notification,SKU-1002 stock drops below reorder threshold (10 units),Email and webhook alert fired to procurement within 60s,Pass
